@@ -11,6 +11,7 @@ class Button {
 		Button(int pin);
 		int read();
 		int wasPressed();
+		int wasReleased();
 };
 
 #endif
