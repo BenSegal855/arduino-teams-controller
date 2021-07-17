@@ -48,6 +48,10 @@ void MSTControl_::setStatus(String status, bool inTeams = false) {
 	delayKeypress(KEY_RETURN, 500);
 
 	delay(500);
+	Keyboard.press(KEY_LEFT_CTRL);
+	Keyboard.press('a');
+	delay(100);
+	Keyboard.releaseAll();
 	Keyboard.print(status);
 
 	for (int i = 0; i < 5; i++) {
